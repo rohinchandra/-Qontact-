@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7638E7BC21E1950F00EB5B98 /* Scan@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7638E7B921E1950E00EB5B98 /* Scan@3x.png */; };
+		7638E7BD21E1950F00EB5B98 /* Scan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7638E7BA21E1950F00EB5B98 /* Scan@2x.png */; };
+		7638E7CC21E435C000EB5B98 /* Present.png in Resources */ = {isa = PBXBuildFile; fileRef = 7638E7CB21E435C000EB5B98 /* Present.png */; };
+		7638E7CE21E5712F00EB5B98 /* PresentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7638E7CD21E5712F00EB5B98 /* PresentController.swift */; };
+		7651272C21E5770F0005ADCB /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7651272B21E5770F0005ADCB /* ScanController.swift */; };
 		76FDEBD421DAACD4005EF4D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FDEBD321DAACD4005EF4D5 /* AppDelegate.swift */; };
-		76FDEBD621DAACD4005EF4D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FDEBD521DAACD4005EF4D5 /* ViewController.swift */; };
 		76FDEBD921DAACD4005EF4D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FDEBD721DAACD4005EF4D5 /* Main.storyboard */; };
 		76FDEBDB21DAACD5005EF4D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76FDEBDA21DAACD5005EF4D5 /* Assets.xcassets */; };
-		76FDEBDE21DAACD5005EF4D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FDEBDC21DAACD5005EF4D5 /* LaunchScreen.storyboard */; };
 		76FDEBE921DAACD5005EF4D5 /* Qontact_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FDEBE821DAACD5005EF4D5 /* Qontact_v2Tests.swift */; };
 		76FDEBF421DAACD5005EF4D5 /* Qontact_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FDEBF321DAACD5005EF4D5 /* Qontact_v2UITests.swift */; };
 /* End PBXBuildFile section */
@@ -34,12 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7638E7B921E1950E00EB5B98 /* Scan@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scan@3x.png"; sourceTree = "<group>"; };
+		7638E7BA21E1950F00EB5B98 /* Scan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scan@2x.png"; sourceTree = "<group>"; };
+		7638E7C821E195E500EB5B98 /* Scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Scan.png; sourceTree = "<group>"; };
+		7638E7CB21E435C000EB5B98 /* Present.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Present.png; path = ../../../../../../Desktop/Present.png; sourceTree = "<group>"; };
+		7638E7CD21E5712F00EB5B98 /* PresentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentController.swift; sourceTree = "<group>"; };
+		7651272B21E5770F0005ADCB /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
 		76FDEBD021DAACD4005EF4D5 /* Qontact-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Qontact-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FDEBD321DAACD4005EF4D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76FDEBD521DAACD4005EF4D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76FDEBD821DAACD4005EF4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76FDEBDA21DAACD5005EF4D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		76FDEBDD21DAACD5005EF4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76FDEBDF21DAACD5005EF4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FDEBE421DAACD5005EF4D5 /* Qontact-v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Qontact-v2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76FDEBE821DAACD5005EF4D5 /* Qontact_v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qontact_v2Tests.swift; sourceTree = "<group>"; };
@@ -74,6 +81,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7638E7C721E195DB00EB5B98 /* icoScan */ = {
+			isa = PBXGroup;
+			children = (
+				7638E7C821E195E500EB5B98 /* Scan.png */,
+				7638E7B921E1950E00EB5B98 /* Scan@3x.png */,
+				7638E7CB21E435C000EB5B98 /* Present.png */,
+				7638E7BA21E1950F00EB5B98 /* Scan@2x.png */,
+			);
+			path = icoScan;
+			sourceTree = "<group>";
+		};
 		76FDEBC721DAACD4005EF4D5 = {
 			isa = PBXGroup;
 			children = (
@@ -97,11 +115,12 @@
 		76FDEBD221DAACD4005EF4D5 /* Qontact-v2 */ = {
 			isa = PBXGroup;
 			children = (
+				7638E7C721E195DB00EB5B98 /* icoScan */,
 				76FDEBD321DAACD4005EF4D5 /* AppDelegate.swift */,
-				76FDEBD521DAACD4005EF4D5 /* ViewController.swift */,
+				7638E7CD21E5712F00EB5B98 /* PresentController.swift */,
+				7651272B21E5770F0005ADCB /* ScanController.swift */,
 				76FDEBD721DAACD4005EF4D5 /* Main.storyboard */,
 				76FDEBDA21DAACD5005EF4D5 /* Assets.xcassets */,
-				76FDEBDC21DAACD5005EF4D5 /* LaunchScreen.storyboard */,
 				76FDEBDF21DAACD5005EF4D5 /* Info.plist */,
 			);
 			path = "Qontact-v2";
@@ -229,9 +248,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76FDEBDE21DAACD5005EF4D5 /* LaunchScreen.storyboard in Resources */,
 				76FDEBDB21DAACD5005EF4D5 /* Assets.xcassets in Resources */,
+				7638E7BD21E1950F00EB5B98 /* Scan@2x.png in Resources */,
+				7638E7BC21E1950F00EB5B98 /* Scan@3x.png in Resources */,
 				76FDEBD921DAACD4005EF4D5 /* Main.storyboard in Resources */,
+				7638E7CC21E435C000EB5B98 /* Present.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76FDEBD621DAACD4005EF4D5 /* ViewController.swift in Sources */,
+				7638E7CE21E5712F00EB5B98 /* PresentController.swift in Sources */,
+				7651272C21E5770F0005ADCB /* ScanController.swift in Sources */,
 				76FDEBD421DAACD4005EF4D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,14 +321,6 @@
 				76FDEBD821DAACD4005EF4D5 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		76FDEBDC21DAACD5005EF4D5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				76FDEBDD21DAACD5005EF4D5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

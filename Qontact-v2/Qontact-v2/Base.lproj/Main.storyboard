@@ -1,24 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jzz-78-Wpf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--PresentController-->
+        <scene sceneID="t8o-ao-H2g">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController title="PresentController" id="S2j-nR-zYq" customClass="PresentController" customModule="Qontact_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T3h-Pk-n9C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4X-WR-nGS">
+                                <rect key="frame" x="38" y="147" width="298" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.1990399283" green="0.60341709639999996" blue="0.91761934759999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="xPd-EP-nBU"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Present" image="Present.png" id="Wbu-dR-bsV"/>
+                    <connections>
+                        <outlet property="imgQRCode" destination="f4X-WR-nGS" id="X8v-4O-H9N"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wax-NV-Mvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-236" y="-8.5457271364317844"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="ggP-CG-FNN">
+            <objects>
+                <viewController id="PLy-BV-ppf" customClass="ScanController" customModule="Qontact_v2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="top" id="rxi-32-0AL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gR2-4d-78n"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scan" image="Scan.png" id="vGI-bv-9oR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bw4-Om-iwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="-673"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bel-0d-Y21">
+            <objects>
+                <tabBarController id="Jzz-78-Wpf" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z1a-6L-eeh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="PLy-BV-ppf" kind="relationship" relationship="viewControllers" id="pSg-hB-Wze"/>
+                        <segue destination="S2j-nR-zYq" kind="relationship" relationship="viewControllers" id="7wJ-JD-fH6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RSW-CH-vNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1190" y="-340"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Present.png" width="25" height="25"/>
+        <image name="Scan.png" width="25" height="25"/>
+    </resources>
 </document>
