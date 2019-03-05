@@ -11,8 +11,16 @@ import UIKit
 class PresentController: UIViewController {
 
     @IBOutlet weak var imgQRCode: UIImageView!
+    @IBOutlet weak var imgProfile: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        imgProfile.layer.borderWidth = 1
+        imgProfile.layer.masksToBounds = false
+        imgProfile.layer.borderColor = UIColor.lightGray.cgColor
+        imgProfile.layer.cornerRadius = imgProfile.frame.height/2
+        imgProfile.clipsToBounds = true
+        
+        
         let savedProfile = "Rohin is great"
         var qrcodeImage: CIImage!
         if qrcodeImage == nil {
@@ -28,6 +36,10 @@ class PresentController: UIViewController {
             let transformedImage = qrcodeImage.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY))
             
             imgQRCode.image = UIImage(ciImage: transformedImage)
+            imgQRCode.layer.shadowColor = UIColor.darkGray.cgColor
+            imgQRCode.layer.shadowOpacity = 1
+            imgQRCode.layer.shadowOffset = CGSize.zero
+            imgQRCode.layer.shadowRadius = 10
         }
 
         // Do any additional setup after loading the view.

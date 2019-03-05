@@ -36,6 +36,7 @@ class ScanController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         case noCameraAvailable
         case videoInputInitFail
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
